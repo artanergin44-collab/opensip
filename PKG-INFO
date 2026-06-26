@@ -1,3 +1,38 @@
+Metadata-Version: 2.4
+Name: opensip
+Version: 0.2.1
+Summary: Pure-Python SIP/RTP user-agent library (UAC + UAS) with asyncio
+Project-URL: Homepage, https://github.com/artan/opensip
+Project-URL: Issues, https://github.com/artan/opensip/issues
+Author: artan
+License: MIT
+License-File: LICENSE
+Keywords: asyncio,rtp,sip,telephony,voip
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: AsyncIO
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Communications :: Internet Phone
+Classifier: Topic :: Communications :: Telephony
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Typing :: Typed
+Requires-Python: >=3.10
+Provides-Extra: audio
+Requires-Dist: numpy>=1.24; extra == 'audio'
+Requires-Dist: sounddevice>=0.4.6; extra == 'audio'
+Provides-Extra: dev
+Requires-Dist: pytest-asyncio>=0.23; extra == 'dev'
+Requires-Dist: pytest>=7; extra == 'dev'
+Requires-Dist: ruff>=0.4; extra == 'dev'
+Description-Content-Type: text/markdown
+
 # opensip
 
 [![PyPI](https://img.shields.io/pypi/v/opensip)](https://pypi.org/project/opensip/)
